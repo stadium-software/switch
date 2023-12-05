@@ -2,6 +2,8 @@
 
 A switch is a way to for users to make a boolean selection. Switches imply that they are effective immediately. Use switches when you want users to make a boolean selection that will be applied immediately.
 
+https://github.com/stadium-software/switch/assets/2085324/64812cbc-de58-4e87-8720-9d7bba8c745e
+
 ## Version 
 
 1.0 Initial
