@@ -38,6 +38,7 @@
     & label:after {
         content: '';
         position: absolute;
+        top: calc(2px * var(--stadium-switch-scale));
         left: calc(3px * var(--stadium-switch-scale));
         width: calc(16px * var(--stadium-switch-scale));
         height: calc(16px * var(--stadium-switch-scale));
