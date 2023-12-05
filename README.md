@@ -26,6 +26,8 @@ A switch is a way to for users to make a boolean selection. Switches imply that 
 
 ![](images/Container-Layout.png)
 
+![](images/Switch-Rendered.png)
+
 # Styling
 Various elements in this module can be styled using the two CSS files in this repo
 
