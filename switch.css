@@ -12,7 +12,9 @@
         margin-top: 0;
     }
 
-    & input[type=checkbox] {
+    & input[type=checkbox],
+    & input[type=checkbox]:checked {
+        position: absolute;
         height: 0;
         width: 0;
         visibility: hidden;
@@ -47,11 +49,15 @@
         transition: transform 0.3s;
     }
 
-    & input:checked+label {
+    & input[type=checkbox] ~ label {
+        background-image: none !important;
+    }
+
+    & input[type=checkbox]:checked+label {
         background: var(--stadium-switch-on-background-color);
     }
 
-    & input:checked+label:after {
+    & input[type=checkbox]:checked+label:after {
         transform: translateX(calc(100% + (3px * var(--stadium-switch-scale))));
     }
 }
