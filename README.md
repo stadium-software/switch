@@ -5,8 +5,7 @@ A switch is a way to for users to make a boolean selection. Switches imply that 
 https://github.com/stadium-software/switch/assets/2085324/64812cbc-de58-4e87-8720-9d7bba8c745e
 
 ## Version 
-
-1.0 Initial
+v1.1 - Updated CSS for Stadium 6.12
 
 # Setup
 
@@ -51,6 +50,7 @@ The CSS below is required for the correct functioning of the module. Some elemen
 1. Open the CSS file called [*switch-variables.css*](switch-variables.css) from this repo
 2. Adjust the variables in the *:root* element as you see fit
 3. Overwrite the file in the CSS folder of your application with the customised file
+4. Do not change any CSS other than the variables provided in the *-variables.css file
 
 ## CSS Upgrading
 To upgrade the CSS in this module, follow the [steps outlined in this repo](https://github.com/stadium-software/samples-upgrading)
