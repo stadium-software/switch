@@ -1,7 +1,7 @@
 /* CSS version 1.0 https: //github.com/stadium-software/switch */
 .stadium-switch {
-    margin-top: 10px;
-    padding-right: 16px;
+    margin-top: 1rem;
+    padding-right: 1.6rem;
 
     .stack-layout-container {
         display: flex;
@@ -27,9 +27,9 @@
     label,
     input[type=checkbox].inline-container ~ label.inline-container {
         text-indent: -9999px;
-        width: calc(40px * var(--stadium-switch-scale, 1.1));
-        height: calc(20px * var(--stadium-switch-scale, 1.1));
-        background: var(--stadium-switch-off-background-color, var(--DARK-GREY));
+        width: calc(4rem * var(--stadium-switch-scale, 1.1));
+        height: calc(2rem * var(--stadium-switch-scale, 1.1));
+        background: var(--stadium-switch-off-background-color, var(--NOTIFICATION-INFO-TYPE-COLOR));
         display: flex;
         align-items: center;
         justify-items: flex-start;
@@ -41,10 +41,10 @@
     label:after {
         content: '';
         position: absolute;
-        top: calc(2px * var(--stadium-switch-scale, 1.1));
-        left: calc(3px * var(--stadium-switch-scale, 1.1));
-        width: calc(16px * var(--stadium-switch-scale, 1.1));
-        height: calc(16px * var(--stadium-switch-scale, 1.1));
+        top: calc(0.2rem * var(--stadium-switch-scale, 1.1));
+        left: calc(0.3rem * var(--stadium-switch-scale, 1.1));
+        width: calc(1.6rem * var(--stadium-switch-scale, 1.1));
+        height: calc(1.6rem * var(--stadium-switch-scale, 1.1));
         background: var(--stadium-switch-button-color, var(--CONTRAST-THEME-COLOR));
         border-radius: 100%;
         transition: transform 0.3s;
@@ -57,11 +57,15 @@
 
     input[type=checkbox]:checked + label,
     input[type=checkbox]:checked.inline-container + label.inline-container {
-        background: var(--stadium-switch-on-background-color, var(--MAIN-THEME-COLOR));
+        background: var(--stadium-switch-on-background-color, var(--NOTIFICATION-SUCCESS-TYPE-COLOR));
     }
 
     input[type=checkbox]:checked + label:after,
     input[type=checkbox]:checked.inline-container + label.inline-container:after {
-        transform: translateX(calc(100% + (3px * var(--stadium-switch-scale, 1.1))));
+        transform: translateX(calc(100% + (0.3rem * var(--stadium-switch-scale, 1.1))));
     }
+}
+html {
+    min-height: 100%;
+    font-size: 62.5%;
 }
